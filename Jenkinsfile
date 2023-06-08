@@ -15,9 +15,14 @@ pipeline {
                 }
             }
         }
-        stage("Done"){
+        stage("Done1"){
             steps {
-                sh "Done"
+                sh "Done1"
+            }
+        }
+        stage("Done2"){
+            steps {
+                sh "Done2"
             }
         }
     }
