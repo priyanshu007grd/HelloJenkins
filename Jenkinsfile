@@ -10,7 +10,7 @@ pipeline {
         }
         stage("Test"){
             steps {
-                dir("simple-java-maven-app") {
+                dir("HelloJenkins") {
                     sh "mvn test"
                 }
             }
