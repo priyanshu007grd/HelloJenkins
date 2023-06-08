@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage("Build"){
             steps {
-                dir("HelloJenkins") {
+                dir("./") {
                     sh "mvn clean install"
                 }
             }
         }
         stage("Test"){
             steps {
-                dir("HelloJenkins") {
+                dir("./") {
                     sh "mvn test"
                 }
             }
